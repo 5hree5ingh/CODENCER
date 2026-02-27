@@ -1,4 +1,5 @@
-// v3 – clean quotation
+// v4 – QR code added
+import { QRCodeSVG } from 'qrcode.react'
 import './Quotation.css'
 
 export default function Quotation() {
@@ -147,9 +148,23 @@ export default function Quotation() {
                             <div className="q-section-title">
                                 <span className="q-pill">T&amp;C</span> Terms &amp; Conditions
                             </div>
-                            <ul className="q-terms-list">
-                                <li><span className="q-t-num">T1</span>Full website support is provided for <strong>1 year</strong> from the date of deployment. If the website goes down or crashes due to technical issues on our end, it will be restored at <strong>no additional cost</strong>.</li>
-                            </ul>
+                            <div style={{ display: 'flex', alignItems: 'flex-start', gap: '18px' }}>
+                                <ul className="q-terms-list" style={{ flex: 1, margin: 0 }}>
+                                    <li><span className="q-t-num">T1</span>Full website support is provided for <strong>1 year</strong> from the date of deployment. If the website goes down or crashes due to technical issues on our end, it will be restored at <strong>no additional cost</strong>.</li>
+                                </ul>
+                                <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', flexShrink: 0 }}>
+                                    <div style={{ padding: '6px', background: '#fff', border: '1.5px solid #e2e8f0', borderRadius: '8px' }}>
+                                        <QRCodeSVG
+                                            value="https://www.codencer.com/27022601"
+                                            size={72}
+                                            bgColor="#ffffff"
+                                            fgColor="#0f1340"
+                                            level="M"
+                                        />
+                                    </div>
+                                    <span style={{ fontSize: '9px', color: '#6b7280', letterSpacing: '0.5px' }}>Scan to verify</span>
+                                </div>
+                            </div>
                         </div>
 
                     </div>
