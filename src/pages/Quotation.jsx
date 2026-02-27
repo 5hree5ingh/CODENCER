@@ -6,7 +6,7 @@ export default function Quotation() {
     return (
         <div className="q-body">
             <div className="q-print-bar">
-                <span>CODENCER – Website Development Quotation</span>
+                <span>CODENCER – ASIANHDR Website Development Quotation</span>
                 <button className="q-print-btn" onClick={() => window.print()}>
                     Print / Save as PDF
                 </button>
@@ -61,7 +61,7 @@ export default function Quotation() {
                     <div className="q-content">
 
                         <div className="q-doc-title-banner">
-                            <h1>Website Development Quotation</h1>
+                            <h1>ASIANHDR Website Development Quotation</h1>
                             <div className="q-doc-meta">
                                 <div className="q-meta-item">Quotation No: <span>27022601</span></div>
                                 <div className="q-meta-item">Date: <span>27 February 2026</span></div>
@@ -155,7 +155,7 @@ export default function Quotation() {
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', flexShrink: 0 }}>
                                     <div style={{ padding: '6px', background: '#fff', border: '1.5px solid #e2e8f0', borderRadius: '8px' }}>
                                         <QRCodeSVG
-                                            value="https://www.codencer.com/27022601"
+                                            value="https://www.codenser.com/27022601"
                                             size={72}
                                             bgColor="#ffffff"
                                             fgColor="#0f1340"

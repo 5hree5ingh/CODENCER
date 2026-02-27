@@ -12,7 +12,7 @@ import Quotation from './pages/Quotation'
 
 export default function App() {
   const location = useLocation()
-  const isQuotation = location.pathname === '/quotation'
+  const isQuotation = location.pathname === '/27022601' || location.pathname === '/quotation'
 
   if (isQuotation) {
     return (
