@@ -57,13 +57,85 @@
 /* ── A4 PAGE ──────────────────────────────────────────────────────── */
 .q-page {
     width: 794px;
-    height: 1123px;
+    min-height: 1123px;
     background: #ffffff;
     position: relative;
     overflow: hidden;
     box-shadow: 0 8px 48px #0003;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 850px) {
+    .q-pages-container {
+        padding: 20px 10px;
+        gap: 20px;
+    }
+
+    .q-page {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+        min-height: unset;
+        border-radius: 12px;
+    }
+
+    .q-content {
+        padding: 20px 20px 100px;
+    }
+
+    .q-doc-title-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+    }
+
+    .q-info-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .q-pricing-box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .q-pricing-box>div:last-child {
+        text-align: left !important;
+    }
+
+    .q-payment-row {
+        flex-direction: column;
+    }
+
+    .q-sig-section {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .q-logo-text {
+        font-size: 20px;
+    }
+
+    .q-tagline {
+        font-size: 10px;
+        letter-spacing: 1.5px;
+    }
+
+    .q-doc-title-banner h1 {
+        font-size: 13px;
+    }
+
+    /* Adjust page 3 flex layout */
+    .q-page:nth-child(3) .q-content>div:nth-child(2) {
+        flex-direction: column !important;
+        align-items: center !important;
+    }
+
+    .q-page:nth-child(3) .q-content>div:nth-child(2)>div:last-child {
+        padding-top: 0 !important;
+    }
 }
 
 /* ── WAVE SVGs ────────────────────────────────────────────────────── */
