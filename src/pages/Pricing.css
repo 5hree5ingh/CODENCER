@@ -1,0 +1,222 @@
+.pricing__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    align-items: start;
+    margin-bottom: 96px;
+}
+
+/* Card */
+.pricing-card {
+    padding: 36px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    transition: var(--transition);
+}
+
+.pricing-card--featured {
+    border-color: var(--accent-purple);
+    box-shadow: 0 0 60px rgba(124, 58, 237, 0.25), inset 0 0 60px rgba(124, 58, 237, 0.06);
+    transform: scale(1.03);
+}
+
+.pricing-card--featured:hover {
+    transform: scale(1.03) translateY(-4px);
+}
+
+.pricing-card__badge {
+    position: absolute;
+    top: -14px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--grad-main);
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 4px 16px;
+    border-radius: 50px;
+    white-space: nowrap;
+}
+
+.pricing-card__header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.pricing-card__emoji {
+    font-size: 2.2rem;
+    margin-bottom: 4px;
+}
+
+.pricing-card__header h3 {
+    font-size: 1.4rem;
+    font-weight: 800;
+}
+
+.pricing-card__tagline {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+}
+
+.pricing-card__price {
+    display: flex;
+    align-items: flex-end;
+    gap: 4px;
+}
+
+.pricing-card__currency {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    background: var(--grad-text);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding-bottom: 4px;
+}
+
+.pricing-card__amount {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+.pricing-card__freq {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    padding-bottom: 6px;
+}
+
+.pricing-card__desc {
+    font-size: 0.875rem;
+    color: var(--text-muted);
+    line-height: 1.65;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+}
+
+.pricing-card__features {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.pricing-card__features li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 0.875rem;
+    color: var(--text-muted);
+}
+
+.pricing-card__check {
+    color: var(--accent-green);
+    font-weight: 700;
+    flex-shrink: 0;
+}
+
+/* Add-ons */
+.addons {
+    margin-bottom: 64px;
+}
+
+.addons__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.addon-card {
+    padding: 24px;
+    display: grid;
+    grid-template-columns: 48px 1fr auto;
+    gap: 16px;
+    align-items: center;
+}
+
+.addon-card__emoji {
+    font-size: 2rem;
+}
+
+.addon-card h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.addon-card p {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+}
+
+.addon-card__price {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 800;
+    white-space: nowrap;
+}
+
+/* Note */
+.pricing__note {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    padding: 32px 40px;
+    background: linear-gradient(135deg, rgba(124, 58, 237, 0.1), rgba(6, 182, 212, 0.07));
+}
+
+.pricing__note>span {
+    font-size: 2rem;
+    flex-shrink: 0;
+}
+
+.pricing__note h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pricing__note p {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+    .pricing__grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .pricing-card--featured {
+        transform: none;
+    }
+
+    .pricing-card--featured:hover {
+        transform: translateY(-4px);
+    }
+}
+
+@media (max-width: 600px) {
+    .addons__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .addon-card {
+        grid-template-columns: 48px 1fr;
+    }
+
+    .addon-card__price {
+        grid-column: 2;
+    }
+
+    .pricing__note {
+        flex-direction: column;
+    }
+}
