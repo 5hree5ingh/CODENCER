@@ -5,14 +5,8 @@ import './Quotation.css'
 export default function Quotation() {
     return (
         <div className="q-body">
-            <div className="q-print-bar">
-                <span>CODENCER – ASIANHDR Website Development Quotation</span>
-                <button className="q-print-btn" onClick={() => window.print()}>
-                    Print / Save as PDF
-                </button>
-            </div>
 
-            <div className="q-pages-container">
+            <div className="q-pages-container" style={{ marginTop: '30px' }}>
 
                 {/* ══════════════ PAGE 1 — QUOTATION ══════════════ */}
                 <div className="q-page">
@@ -41,16 +35,15 @@ export default function Quotation() {
 
                     <div className="q-header">
                         <div className="q-logo-row">
-                            <svg className="q-logo-icon" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="q-logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
-                                    <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#5d5fef" />
-                                        <stop offset="100%" stopColor="#3d8ef5" />
+                                    <linearGradient id="cg1" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="#7C3AED" />
+                                        <stop offset="100%" stopColor="#06B6D4" />
                                     </linearGradient>
                                 </defs>
-                                <polygon points="23,4 42,23 23,42 4,23" fill="none" stroke="url(#lg1)" strokeWidth="3.5" />
-                                <polyline points="16,23 20,18 20,28" fill="none" stroke="url(#lg1)" strokeWidth="2.5" strokeLinecap="round" />
-                                <polyline points="30,23 26,18 26,28" fill="none" stroke="#00c6ff" strokeWidth="2.5" strokeLinecap="round" />
+                                <polyline points="18,10 8,25 18,40" fill="none" stroke="url(#cg1)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+                                <polyline points="28,10 38,25 28,40" fill="none" stroke="url(#cg1)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <span className="q-logo-text">CODENCER</span>
                         </div>
@@ -217,16 +210,15 @@ export default function Quotation() {
 
                     <div className="q-header">
                         <div className="q-logo-row">
-                            <svg className="q-logo-icon" viewBox="0 0 46 46" xmlns="http://www.w3.org/2000/svg">
+                            <svg className="q-logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
                                 <defs>
-                                    <linearGradient id="lg2" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stopColor="#5d5fef" />
-                                        <stop offset="100%" stopColor="#3d8ef5" />
+                                    <linearGradient id="cg2" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="#7C3AED" />
+                                        <stop offset="100%" stopColor="#06B6D4" />
                                     </linearGradient>
                                 </defs>
-                                <polygon points="23,4 42,23 23,42 4,23" fill="none" stroke="url(#lg2)" strokeWidth="3.5" />
-                                <polyline points="16,23 20,18 20,28" fill="none" stroke="url(#lg2)" strokeWidth="2.5" strokeLinecap="round" />
-                                <polyline points="30,23 26,18 26,28" fill="none" stroke="#00c6ff" strokeWidth="2.5" strokeLinecap="round" />
+                                <polyline points="18,10 8,25 18,40" fill="none" stroke="url(#cg2)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+                                <polyline points="28,10 38,25 28,40" fill="none" stroke="url(#cg2)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
                             </svg>
                             <span className="q-logo-text">CODENCER</span>
                         </div>
@@ -370,6 +362,165 @@ export default function Quotation() {
                         </defs>
                         <path d="M0,80 Q200,10 400,60 Q600,110 794,30 L794,140 L0,140 Z" fill="url(#waveGrad4)" />
                         <ellipse cx="200" cy="110" rx="180" ry="50" fill="url(#glow4)" />
+                        <path d="M0,100 Q300,40 600,90 Q700,110 794,60 L794,140 L0,140 Z" fill="#0f1a5540" />
+                        <circle cx="90" cy="110" r="2" fill="#7eb8ff" opacity="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.8s" repeatCount="indefinite" /></circle>
+                    </svg>
+                    <div className="q-footer"><span className="q-footer-url">www.codencer.com</span></div>
+                </div>
+
+                {/* ══════════════ PAGE 3 — PAYMENT INFO ══════════════ */}
+                <div className="q-page">
+
+                    <svg className="q-wave-top" viewBox="0 0 794 160" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="glow5" cx="70%" cy="20%" r="60%">
+                                <stop offset="0%" stopColor="#3d8ef5" stopOpacity="0.7" />
+                                <stop offset="100%" stopColor="#0f1340" stopOpacity="0" />
+                            </radialGradient>
+                            <linearGradient id="waveGrad5" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" stopColor="#0f1340" />
+                                <stop offset="60%" stopColor="#1565c0" />
+                                <stop offset="100%" stopColor="#0f1340" />
+                            </linearGradient>
+                        </defs>
+                        <rect width="794" height="160" fill="url(#waveGrad5)" />
+                        <ellipse cx="560" cy="30" rx="220" ry="60" fill="url(#glow5)" />
+                        <path d="M0,160 Q200,60 400,100 Q600,140 794,50 L794,0 L0,0 Z" fill="#0f1a5580" />
+                        <path d="M0,160 Q250,80 500,120 Q650,150 794,80 L794,160 Z" fill="#ffffff" />
+                        <circle cx="120" cy="45" r="2" fill="#7eb8ff" opacity="0.8"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.5s" repeatCount="indefinite" /></circle>
+                        <circle cx="650" cy="35" r="2.5" fill="#60a5fa" opacity="0.9"><animate attributeName="opacity" values="0.9;0.3;0.9" dur="2s" repeatCount="indefinite" /></circle>
+                    </svg>
+
+                    <div className="q-header">
+                        <div className="q-logo-row">
+                            <svg className="q-logo-icon" viewBox="0 0 50 50" xmlns="http://www.w3.org/2000/svg">
+                                <defs>
+                                    <linearGradient id="cg3" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" stopColor="#7C3AED" />
+                                        <stop offset="100%" stopColor="#06B6D4" />
+                                    </linearGradient>
+                                </defs>
+                                <polyline points="18,10 8,25 18,40" fill="none" stroke="url(#cg3)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+                                <polyline points="28,10 38,25 28,40" fill="none" stroke="url(#cg3)" strokeWidth="5" strokeLinecap="round" strokeLinejoin="round" />
+                            </svg>
+                            <span className="q-logo-text">CODENCER</span>
+                        </div>
+                        <div className="q-tagline">www.codencer.com</div>
+                        <div className="q-header-divider" />
+                    </div>
+
+                    <div className="q-content">
+
+                        <div className="q-doc-title-banner">
+                            <h1>Payment Details</h1>
+                            <div className="q-doc-meta">
+                                <div className="q-meta-item">Ref: <span>27022601</span></div>
+                                <div className="q-meta-item">Page: <span>3 of 3</span></div>
+                            </div>
+                        </div>
+
+                        {/* Main layout: bank info left, QR right */}
+                        <div style={{ display: 'flex', gap: '30px', alignItems: 'flex-start', marginBottom: '20px' }}>
+
+                            {/* Bank Details */}
+                            <div style={{ flex: 1 }}>
+                                <div className="q-section-title">
+                                    <span className="q-pill">BANK</span> Bank Transfer Details
+                                </div>
+                                <div className="q-info-card" style={{ marginBottom: '16px' }}>
+                                    <table style={{ width: '100%', borderCollapse: 'collapse' }}>
+                                        <tbody>
+                                            <tr style={{ borderBottom: '1px solid #e8ecf5' }}>
+                                                <td style={{ fontSize: '11px', color: '#6b7280', fontWeight: 600, padding: '10px 0 10px 0', width: '40%' }}>Account Holder</td>
+                                                <td style={{ fontSize: '13px', color: '#0f1340', fontWeight: 800, padding: '10px 0' }}>SHREYANSH</td>
+                                            </tr>
+                                            <tr style={{ borderBottom: '1px solid #e8ecf5' }}>
+                                                <td style={{ fontSize: '11px', color: '#6b7280', fontWeight: 600, padding: '10px 0' }}>Account Number</td>
+                                                <td style={{ fontSize: '13px', color: '#0f1340', fontWeight: 800, padding: '10px 0', letterSpacing: '1px' }}>2049870835</td>
+                                            </tr>
+                                            <tr style={{ borderBottom: '1px solid #e8ecf5' }}>
+                                                <td style={{ fontSize: '11px', color: '#6b7280', fontWeight: 600, padding: '10px 0' }}>IFSC Code</td>
+                                                <td style={{ fontSize: '13px', color: '#0f1340', fontWeight: 800, padding: '10px 0' }}>KKBK0005328</td>
+                                            </tr>
+                                            <tr style={{ borderBottom: '1px solid #e8ecf5' }}>
+                                                <td style={{ fontSize: '11px', color: '#6b7280', fontWeight: 600, padding: '10px 0' }}>Bank</td>
+                                                <td style={{ fontSize: '13px', color: '#0f1340', fontWeight: 700, padding: '10px 0' }}>Kotak Mahindra Bank</td>
+                                            </tr>
+                                            <tr>
+                                                <td style={{ fontSize: '11px', color: '#6b7280', fontWeight: 600, padding: '10px 0 0' }}>Account Type</td>
+                                                <td style={{ fontSize: '13px', color: '#0f1340', fontWeight: 700, padding: '10px 0 0' }}>Savings</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div className="q-section-title">
+                                    <span className="q-pill">UPI</span> UPI Payment
+                                </div>
+                                <div className="q-info-card">
+                                    <div style={{ fontSize: '11px', color: '#6b7280', fontWeight: 600, marginBottom: '6px' }}>UPI ID</div>
+                                    <div style={{ fontSize: '16px', color: '#0f1340', fontWeight: 900, letterSpacing: '0.5px', marginBottom: '8px' }}>8766358288@ybl</div>
+                                    <div style={{ fontSize: '11px', color: '#6b7280' }}>Scan QR or enter UPI ID in any payment app</div>
+                                </div>
+                            </div>
+
+                            {/* UPI QR Code */}
+                            <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '12px', paddingTop: '30px' }}>
+                                <div style={{ padding: '14px', background: '#fff', border: '2px solid #e2e8f0', borderRadius: '16px', boxShadow: '0 4px 24px #5d5fef15' }}>
+                                    <QRCodeSVG
+                                        value="upi://pay?pa=8766358288@ybl&pn=SHREYANSH&cu=INR"
+                                        size={200}
+                                        bgColor="#ffffff"
+                                        fgColor="#0f1340"
+                                        level="H"
+                                    />
+                                </div>
+                                <div style={{ textAlign: 'center' }}>
+                                    <div style={{ fontSize: '13px', fontWeight: 800, color: '#0f1340', letterSpacing: '0.5px' }}>Scan to Pay</div>
+                                    <div style={{ fontSize: '11px', color: '#6b7280', marginTop: '3px' }}>Works with PhonePe, GPay, Paytm &amp; all UPI apps</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        {/* Payment summary */}
+                        <div className="q-payment-highlight">
+                            <div className="q-ph-title">Payment Summary — Quotation 27022601</div>
+                            <div className="q-payment-row">
+                                <div className="q-payment-cell">
+                                    <div className="q-pc-label">Advance (Phase 1)</div>
+                                    <div className="q-pc-value">₹7,500</div>
+                                    <div className="q-pc-note">Due before 25 Feb 2026</div>
+                                </div>
+                                <div className="q-payment-cell">
+                                    <div className="q-pc-label">Final (On Delivery)</div>
+                                    <div className="q-pc-value">₹7,500</div>
+                                    <div className="q-pc-note">Due after Phase 3</div>
+                                </div>
+                                <div className="q-payment-cell">
+                                    <div className="q-pc-label">Total</div>
+                                    <div className="q-pc-value">₹15,000</div>
+                                    <div className="q-pc-note">7-Page Static Website</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <svg className="q-wave-bottom" viewBox="0 0 794 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="glow6" cx="30%" cy="80%" r="60%">
+                                <stop offset="0%" stopColor="#3d8ef5" stopOpacity="0.8" />
+                                <stop offset="100%" stopColor="#0f1340" stopOpacity="0" />
+                            </radialGradient>
+                            <linearGradient id="waveGrad6" x1="0%" y1="100%" x2="100%" y2="0%">
+                                <stop offset="0%" stopColor="#0f1340" />
+                                <stop offset="60%" stopColor="#1565c0" />
+                                <stop offset="100%" stopColor="#0f1340" />
+                            </linearGradient>
+                        </defs>
+                        <path d="M0,80 Q200,10 400,60 Q600,110 794,30 L794,140 L0,140 Z" fill="url(#waveGrad6)" />
+                        <ellipse cx="200" cy="110" rx="180" ry="50" fill="url(#glow6)" />
                         <path d="M0,100 Q300,40 600,90 Q700,110 794,60 L794,140 L0,140 Z" fill="#0f1a5540" />
                         <circle cx="90" cy="110" r="2" fill="#7eb8ff" opacity="0.7"><animate attributeName="opacity" values="0.7;0.2;0.7" dur="2.8s" repeatCount="indefinite" /></circle>
                     </svg>
