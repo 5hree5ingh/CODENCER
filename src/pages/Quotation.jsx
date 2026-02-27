@@ -148,7 +148,7 @@ export default function Quotation() {
                                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px', flexShrink: 0 }}>
                                     <div style={{ padding: '6px', background: '#fff', border: '1.5px solid #e2e8f0', borderRadius: '8px' }}>
                                         <QRCodeSVG
-                                            value="https://www.codenser.com/27022601"
+                                            value="https://www.codencer.com/27022601"
                                             size={72}
                                             bgColor="#ffffff"
                                             fgColor="#0f1340"
